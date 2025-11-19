@@ -34,7 +34,7 @@ This project is a simple RESTful API built using Flask. It provides endpoints to
         python app.py
 
 
-  The server will start at:
+      The server will start at:
 
         http://127.0.0.1:5000/
 
@@ -83,26 +83,27 @@ This project is a simple RESTful API built using Flask. It provides endpoints to
         DELETE /users/1
   
 - Testing with Postman or cURL
+
   GET all users
 
       curl http://127.0.0.1:5000/users
 
-GET a specific user
+  GET a specific user
 
       curl http://127.0.0.1:5000/users/1
 
-POST (Create user)
+  POST (Create user)
 
-    curl -X POST -H "Content-Type: application/json" \
-    -d "{\"name\":\"Alice\", \"email\":\"alice@example.com\"}" \
-    http://127.0.0.1:5000/users
+        curl -X POST -H "Content-Type: application/json" \
+        -d "{\"name\":\"Alice\", \"email\":\"alice@example.com\"}" \
+        http://127.0.0.1:5000/users
 
-PUT (Update user)
+  PUT (Update user)
 
-    curl -X PUT -H "Content-Type: application/json" \
-    -d "{\"email\":\"updated@example.com\"}" \
-    http://127.0.0.1:5000/users/1
+       curl -X PUT -H "Content-Type: application/json" \
+        -d "{\"email\":\"updated@example.com\"}" \
+        http://127.0.0.1:5000/users/1
 
-DELETE (Remove user)
+  DELETE (Remove user)
 
-    curl -X DELETE http://127.0.0.1:5000/users/1
+        curl -X DELETE http://127.0.0.1:5000/users/1
